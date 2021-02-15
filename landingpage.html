@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Creates title "Latitude for Landing Page" -->
-<title>Latitude</title>
+    <!--added this style later on to be certain that the text would allign on the left side of the page-->
+<style>
+    div.a{text-align:left;}
+</style>
+    <!-- Creates title "Latitude for Landing Page" EDIT*** couldnt change this color this way but will come back if time allows me to -->
+<title style ="color:red;">Latitude</title>
     <!--Meta Tag for Character Encoding-->
 <meta charset="utf-8">
     <!-- Meta Tag for Scale of decive viewing the webpage-->
@@ -15,7 +19,7 @@
 <body>
     <!-- Creates Navigation Bar-->
     <!-- Use medium sizing and change color to green with "success" tag-->
-    <nav class = "navbar navbar-expand-md navbar-light bg-success">
+    <nav class = "navbar navbar-expand-lg navbar-light bg-success">
         <!--Add latitude hreflink to take you back to landing page for later use in other pages-->
         <a class="navbar-brance" href="landingpage.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbardt" aria-controls="navbardt" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +42,7 @@
                      <a class="dropdown-item" href="wind.html">Latitude/Wind Speed</a>
                     </div>
                 </li>
+                <!--Adds the last two items for the navbar with a link to the comparison page with all 4 figures and a link to the data page for raw data-->
                 <li class="nav-item active">
                     <a class="nav-link" href="comp.html">Comparison <span class="sr-only">(current)</span></a>
                   </li>
@@ -46,8 +51,24 @@
                   </li>
             </ul>
         </div>
-
     </nav>
+    <div class="a">
+        
+            <div class="col-lg-8 col-md-10 col-sm-12">
+            <h1>Summary:Latitude VS. X</h1>
+         <a href="resources/assets/Fig1.png">
+            <div class="image">
+                <img src="Resources/assets/Fig1.png" alt="Latitude vs Temp" class="rounded float-left thumbnail">
+            </div></a>
+    <br><br>   
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+        <br>
+        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+    </div>
+    <div class="col-lg-6 col-md12 col-sm-12">
+        <h3>Visualizations</h3>
+    </div>
+    </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
