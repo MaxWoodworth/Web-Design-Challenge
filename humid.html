@@ -1,3 +1,4 @@
+<!--Copy pasta'd the landing page as a outline for all 4 visualizations-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,8 @@
 <style>
     div.a{text-align:left;}
 </style>
-    <!-- Creates title "Latitude for Landing Page" EDIT*** couldnt change this color this way but will come back if time allows me to -->
-<title style ="color:red;">Latitude</title>
+    
+<title>Humidity</title>
     <!--Meta Tag for Character Encoding-->
 <meta charset="utf-8">
     <!-- Meta Tag for Scale of decive viewing the webpage-->
@@ -55,13 +56,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <h1>Summary: Latitude VS. X</h1>
-                <a href="resources/assets/Fig1.png">
-                    <img src="Resources/assets/Fig1.png" alt="Latitude vs Temp" class="rounded float-left thumbnail">
+                <h1>Humidity</h1>
+                <a href="resources/assets/Fig2.png">
+                    <img src="Resources/assets/Fig2.png" alt="Latitude and Humidity" class="rounded float-left thumbnail">
                 </a>
-                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                <br>
-                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                <p>This grahpic shows the relationship between humidity(represented as a percent on the Y axis) and Latitude(represented on the X axis). It is obvious that there are no data entries for Latitudess over 80. There seems to be little correlation other than the number of points at 100% humidity. There could be an argument made to say that the further from the equator the more insances of scattered humidity occur. </p>
+                
             
         
     </div>    
@@ -69,7 +69,7 @@
     Summary and it was simply because I was closing my row and container divs so when I went to give a sizing column
 class div to the visualizations it wanted to restart from 0-->
     <div class="col-lg-4">
-        <h5>Visualizations</h5>
+        <h3>Visualizations</h3>
         <a href="resources/assets/Fig1.png">
             <img src="Resources/assets/Fig1.png" alt="Temperature">
             </a>
